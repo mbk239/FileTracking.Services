@@ -1,0 +1,15 @@
+
+@{
+    ViewData["Title"] = "DirectoryFileAPI";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>DirectoryFileAPI</h2>
+<a onclick="downloadFile('1');">Download file</a>
+<script>
+    function downloadFile(id)
+    {
+        var url = '/api/file/downloadfile/nqhung/xyz/' + id;
+        window.location = url;
+    }
+</script>
